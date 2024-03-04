@@ -29,7 +29,7 @@ class CsvPipeline(object):
         else:
             is_first_write = 0
         if item:
-            with open(file_path, 'a', encoding='utf-8-sig', newline='') as f:
+            with open(file_path, 'a', encoding='utf-8', newline='') as f:
                 writer = csv.writer(f)
                 if is_first_write:
                     header = [
